@@ -18,7 +18,7 @@ echo 'Successfully pushed to Docker Container Registry ' $IMAGE
 echo 'Delete old deploy kubernetes ... ' 
 
 #delete old deploy
-kubectl delete deployment frontend-v1 -n app
+kubectl delete deployment frontend-v1 
 echo 'Successfully deleted ' 
 
 echo 'Apply changes app kubernetes ' 

@@ -1,5 +1,5 @@
 FROM node:11.13.0-alpine
-LABEL maintainer = "soporte@syscomer.com"
+LABEL maintainer = "rlopezadana@gmail.com"
 
 # create destination directory
 RUN mkdir -p /usr/src/nuxt-app

@@ -14,11 +14,15 @@
       </div>
       <div style="padding-top:1em">
         <h4>result service :</h4>
-        {{response}}
+        <pre>
+          {{response}}
+        </pre>
       </div>
       <div style="padding-top:1em">
         <h4>error service :</h4>
-        {{error}}
+        <pre>
+          {{error}}
+        </pre>
       </div>
     </div>
   </section>
@@ -35,7 +39,8 @@ export default {
   },
   methods:{
     async loadData() {
-      let url = `https://jsonplaceholder.typicode.com/todos/1`;
+      let url = `http://clientes-svc:5000/api/v1/clients`;
+      // let url = `http://localhost:5000/api/v1/clients`;
       try {
           this.response = await this.$axios.$get(url);
       } catch(err) {

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-kubectl delete deployment frontend-v1 -n app
-kubectl delete svc frontend -n app
+kubectl delete deployment frontend-v1 
+kubectl delete svc frontend 
