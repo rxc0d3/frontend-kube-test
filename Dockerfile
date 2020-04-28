@@ -25,5 +25,7 @@ ENV NUXT_HOST=0.0.0.0
 # set app port
 ENV NUXT_PORT=3000
 
+ENV SVC_URL=http://clientes-svc:5000
+
 # start the app
 CMD [ "npm", "start" ]

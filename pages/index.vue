@@ -39,6 +39,8 @@ export default {
   },
   methods:{
     async loadData() {
+      console.log(process.env.SVC_URL);
+      console.log(process.env);
       let url = `http://clientes-svc:5000/api/v1/clients`;
       // let url = `http://localhost:5000/api/v1/clients`;
       try {
