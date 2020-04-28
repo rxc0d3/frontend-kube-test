@@ -40,7 +40,12 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['nuxt-env', {
+      keys: [
+        'SVC_URL', // Basic usage—equivalent of { key: 'TEST_ENV_VAR' }
+      ]
+    }]
   ],
   /*
   ** Axios module configuration
