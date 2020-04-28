@@ -35,6 +35,9 @@ module.exports = {
   plugins: [
     '~/plugins/axios'
   ],
+  serverMiddleware: [
+    '~/server'
+  ],
 
   /*
   ** Nuxt.js modules

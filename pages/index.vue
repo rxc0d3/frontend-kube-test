@@ -7,7 +7,7 @@
       </h2>
       <div class="links">
         <a
-          @click.prevent="loadData"
+          @click.prevent="loadDataTesting"
           href="#"
           target="_blank"
           class="button--green">Load Data Service</a>
@@ -44,12 +44,24 @@ export default {
       let url = `${this.$env.SVC_URL}/api/v1/clients`;
       // let url = `http://localhost:5000/api/v1/clients`;
       try {
-          this.response = await this.$api.$get(url);
+          this.response = await this.$axios.$get(url);
       } catch(err) {
           console.log(err);
-          this.error = err.response;
+          console.log(err.response);
+
       }
-    }
+    },
+    async loadDataTesting() {
+  
+      let url = `/api/tests`;
+      try {
+          let response = await this.$axios.$get(url);
+          console.log(response);
+      } catch(err) {
+          console.log(err.response);
+      }
+    },
+
   }
 }
 </script>
