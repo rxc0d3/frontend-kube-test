@@ -5,9 +5,9 @@ const router = Router()
 
 // Get Testinf
 router.get('/tests', async function( req, res ) {
-    console.log(process.env);
+    let url = `${process.env.SVC_UR}/api/v1/clients`;
     try {
-        let response = await axios.get('http://clientes-svc:5000/api/v1/clients');
+        let response = await axios.get(url);
         res.status(200).send(response.data); 
 
     } catch (error) {
