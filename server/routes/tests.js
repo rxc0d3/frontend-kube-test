@@ -7,7 +7,7 @@ const router = Router()
 router.get('/tests', async function( req, res ) {
     console.log(process.env);
     try {
-        let response = await axios.get('http://localhost:5000/api/v1/clients');
+        let response = await axios.get('http://clientes-svc:5000/api/v1/clients');
         res.status(200).send(response.data); 
 
     } catch (error) {
