@@ -5,7 +5,7 @@ const router = Router()
 
 // Get Testinf
 router.get('/tests', async function( req, res ) {
-    let url = `${process.env.SVC_UR}/api/v1/clients`;
+    let url = `${process.env.SVC_URL}/api/v1/clients`;
     try {
         let response = await axios.get(url);
         res.status(200).send(response.data); 
