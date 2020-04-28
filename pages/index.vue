@@ -53,7 +53,7 @@ export default {
     },
     async loadDataTesting() {
   
-      let url = `/api/tests`;
+      let url = `http://157.230.199.26/api/tests`;
       try {
           let response = await this.$axios.$get(url);
           console.log(response);
