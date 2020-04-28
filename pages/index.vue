@@ -44,7 +44,7 @@ export default {
       let url = `${this.$env.SVC_URL}/api/v1/clients`;
       // let url = `http://localhost:5000/api/v1/clients`;
       try {
-          this.response = await this.$axios.$get(url);
+          this.response = await this.$api.$get(url);
       } catch(err) {
           console.log(err);
           this.error = err.response;
