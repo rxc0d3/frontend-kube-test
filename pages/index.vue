@@ -39,9 +39,8 @@ export default {
   },
   methods:{
     async loadData() {
-      console.log(this.$env.SVC_URL);
       console.log(this.$env);
-      let url = `http://clientes-svc:5000/api/v1/clients`;
+      let url = `${this.$env.SVC_URL}/api/v1/clients`;
       // let url = `http://localhost:5000/api/v1/clients`;
       try {
           this.response = await this.$axios.$get(url);
