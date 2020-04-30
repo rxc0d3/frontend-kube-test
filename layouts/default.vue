@@ -4,6 +4,20 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  created(){
+    if(process.browser) {
+      if(window.location.hostname == '157.230.199.26') {
+        window.location = "https://secureteam.site";
+      }
+    }
+  }
+
+}
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
