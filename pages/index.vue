@@ -56,7 +56,7 @@ export default {
       }
     },
     async loadDataTesting() {
-      let url = `http://157.230.199.26/api/tests`;
+      let url = `https://secureteam.site/api/tests`;
       try {
           this.response = await this.$axios.$get(url);
       } catch(err) {
